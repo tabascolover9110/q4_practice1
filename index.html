@@ -7,18 +7,23 @@
 </head>
 <body>
     <h1>JavaScript Conditional Statements</h1>
-    <h2>meow</h2>
+
+    <input type="text" class="form control" id="age" placeholder="type here..">
+    <button class="btn btn-info" onclick="checkage()">Check</button>
 
     <script>
-        if (67 < 18){
+        function checkAge(){
+        var Age = document.getElementById("Age").value;
+        if (Age < 18){
             alert("Minor Alert!");
         }
-        else if (21 > 18){
+        else if (Age > 18){
             alert("happy legality");
         }
         else {
             alert("how old are u...");
         }
+    }
     </script>
 </body>
 </html>
